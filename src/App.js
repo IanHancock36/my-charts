@@ -1,5 +1,5 @@
 import "./styles.css";
-import React from "react";
+import React, { useState }from "react";
 import {
   BarChart,
   Bar,
@@ -76,7 +76,10 @@ const data = [
 ];
 
 export default function App() {
+  const [data1, setData1] = useState(false)
   return (
+    <div>
+          { data1 ? 
     <BarChart
       width={500}
       height={300}
@@ -96,5 +99,8 @@ export default function App() {
       <Bar dataKey="pv" fill="green" />
       <Bar dataKey="uv" fill="red" />
     </BarChart>
+      : null}
+    </div>
   );
 }
+// wrap each bar graph with the button to show the indivdual items in the spread sheets. 

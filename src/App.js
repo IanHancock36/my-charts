@@ -97,7 +97,7 @@ export default function App() {
       <Tooltip />
       <Legend />
       <Bar dataKey="pv" fill="green" />
-      <Bar dataKey="uv" fill="red" />
+      <Bar dataKey="uv" fill="blue" />
     </BarChart>
       : null}
     </div>

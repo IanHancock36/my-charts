@@ -96,8 +96,8 @@ export default function App() {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="pv" fill="green" />
-      <Bar dataKey="uv" fill="blue" />
+      <Bar dataKey="pv" fill="#fff" />
+      <Bar dataKey="uv" fill="yellow" />
     </BarChart>
       : null}
     </div>
